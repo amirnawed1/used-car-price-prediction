@@ -30,6 +30,7 @@ def load_model():
     return pickle.load(open("LinearRegressionModel.pkl", "rb"))
 
 car = load_data()
+car['car_age'] = 2025 - car['year']
 model = load_model()
 
 # ========== SIDEBAR ==========
